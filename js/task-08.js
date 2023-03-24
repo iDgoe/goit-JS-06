@@ -1,4 +1,4 @@
-const resultForm = document.querySelector('login-form');
+const resultForm = document.querySelector('.login-form');
 
 function addInfoForm(event) {
   event.preventDefault();
@@ -11,7 +11,7 @@ function addInfoForm(event) {
     return alert('Да пребудет с тобой сила, введи свой email и password');
   }
 
-  const newClient = {};
+    const newClient = {};
   newClient.email = email.value;
   newClient.password = password.value;
   console.log(newClient);
