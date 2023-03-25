@@ -16,7 +16,7 @@ const result = ingredients.map(element => {
   el.classList.add('item');
   return el;
 });
-
+console.log(result);
 list.append(...result);
 
 // function result1(x) {

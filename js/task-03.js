@@ -18,15 +18,30 @@ console.log(list);
 
 const result = x => {
   return x
-    .map(({ url, alt } = {}) => {
+    .map(({ url, alt }) => {
       return `
     <li>
-    <a href="#">
-    <img src="${url}" alt="${alt}>
-    </a>
+    <img src="${url}" alt="${alt}" width="1260" hight="750">
     </li>`;
     })
     .join('');
 };
 
 list.insertAdjacentHTML('afterbegin', result(images));
+
+//   return `
+//   <li>
+//   <a href="#">
+//   <img src="${url}" alt="${alt}>
+//   </a>
+//   </li>`;
+// })
+// .join('');
+
+// list.append(...result);
+
+// const result = ingredients.map(element => {
+
+//   el.classList.add('item');
+//   return el;
+// });

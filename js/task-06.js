@@ -3,12 +3,13 @@ console.log(inputEl);
 console.log(inputEl.dataset.length);
 
 const addColor = () => {
-  if (inputEl.value.length == inputEl.dataset.length) {
+    inputEl.classList.add('invalid');
+    inputEl.classList.remove('valid');
+  if (inputEl.value.length === inputEl.dataset.length) {
     inputEl.classList.add('valid');
     inputEl.classList.remove('invalid');
   } else {
-    inputEl.classList.add('invalid');
-    inputEl.classList.remove('valid');
+  
   }
 };
 

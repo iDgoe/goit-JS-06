@@ -7,11 +7,12 @@ function addInfoForm(event) {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value == '' || password.value == '') {
-    return alert('Да пребудет с тобой сила, введи свой email и password');
+  if (!email.value || !password.value) {
+    alert('Да пребудет с тобой сила, введи свой email и password');
+    return;
   }
 
-    const newClient = {};
+  const newClient = {};
   newClient.email = email.value;
   newClient.password = password.value;
   console.log(newClient);

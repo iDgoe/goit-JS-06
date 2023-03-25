@@ -14,7 +14,7 @@ function getRandomHexColor() {
 
 const addColor = () => {
   backColor.textContent = getRandomHexColor();
-  body.style.background = getRandomHexColor();
+  body.style.background = backColor.textContent;
 };
 
 clickIn.addEventListener('click', addColor);
