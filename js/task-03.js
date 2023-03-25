@@ -16,8 +16,8 @@ const images = [
 const list = document.querySelector('ul.gallery');
 console.log(list);
 
-const result = x => {
-  return x
+const result = arr => {
+  return arr
     .map(({ url, alt }) => {
       return `
     <li>
