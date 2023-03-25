@@ -3,18 +3,13 @@ console.log(inputEl);
 console.log(inputEl.dataset.length);
 
 const addColor = () => {
-    inputEl.classList.add('invalid');
-    inputEl.classList.remove('valid');
-  if (inputEl.value.length === inputEl.dataset.length) {
-    inputEl.classList.add('valid');
-    inputEl.classList.remove('invalid');
-  } else {
-  
+  inputEl.classList.add('invalid');
+  if (inputEl.value.length == inputEl.dataset.length) {
+    inputEl.classList.replace('invalid', 'valid');
   }
 };
 
 inputEl.addEventListener('blur', addColor);
-
 
 // console.log(inputEl);
 // console.log(number);
@@ -52,7 +47,6 @@ inputEl.addEventListener('blur', addColor);
 // const inputElOff = () => {
 //   console.log('oh NO');
 // };
-
 
 //   <style>
 //       #validation-input {
